@@ -68,3 +68,34 @@ img:hover, img:hover + .imgtext, .imgtext:hover {
 .animal:hover > img {
 	transform: scale(1.1);
 }
+
+
+@media (max-width: 750px) {
+	h1 {
+		width: 390px;
+	}
+	.more {
+		display: none;
+	}
+}
+
+@media (max-width: 450px) {
+	h1 {
+	 transform: scale(0.8);
+		margin-left: -30px;
+	}
+	img {
+		transform: scale(0.7);
+		margin: 0;
+	}
+	.animal:hover > img {
+	 transform: scale(0.8);
+  }
+	.imgtext {
+		bottom: 20%;
+		padding-left: 20%;
+		padding-right: 20%;
+		transform: scale(0.8);
+	}
+}
+
